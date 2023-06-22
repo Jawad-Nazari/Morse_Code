@@ -27,9 +27,9 @@ MORSE_CODE = {
   '--..' => 'z'
 }.freeze
 
-  def self.decode_char(code)
-    MORSE_CODE[code].upcase if MORSE_CODE.key?(code)
-  end
+def self.decode_char(code)
+  MORSE_CODE[code].upcase if MORSE_CODE.key?(code)
+end
 
 def decode_word(morse_word)
   morse_chars = morse_word.split
